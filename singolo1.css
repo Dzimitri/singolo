@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+body {
+  font-family: 'Lato', bold ;
+}
+header{
+  width: 100%;
+  background: #1d252c;  
+  display: flex;
+  border-bottom: 6px solid #323746; /*рамка по низу*/
+}
+.header_logo{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800; /*жирность шрифта*/
+  font-size: 19px; /*размер шрифта*/
+  cursor: pointer; /*cursor-определяет тип отображаемого курсора мыши при наведении на элемент,pointer-курсор отрисовывается как указатель.*/
+  margin-top: 34px; /*отступ сверху до текста лого*/
+  margin-left: 4%;  /*отступ слева*/
+  margin-bottom: 35px; /*отступ вниз*/
+
+}
+nav{
+  margin-top: 34px;
+  margin-left: 44%;
+}
+.topnav a{
+  color: #fff;
+  text-align: center;
+  padding: 30px; /*padding-устанавливает расстояние между внутренним краем рамки элемента и его содержимым*/
+  font-size: 10px; 
+  font-weight: bold; /*жирный шрифт*/
+  text-transform: uppercase; /*делает буквы заглавными*/
+}
+.topnav a:hover {
+  text-decoration: none;
+  color: #f06c64;
+}
+main{
+  
+   /*рамка по низу*/
+  padding: 0;
+}
+.slider{
+  height: 600px;
+  display: flex; /*Преобразует элемент в блочный flex-контейнер*/
+  justify-content: space-between; /*flex-элементы равномерно распределяются по горизонтали. 1-й элемент прилегает своей левой границей к левой границе контейнера, а последний прилегает к правой границе.*/
+  align-items: center; /*flex-элементы располагаются по центру контейнера, имея одинаковые отступы сверху и снизу. */
+  background: #f06c64;
+  border-bottom: 6px solid #ea676b;
+  margin: 0 auto;
+  padding: 50px 40px 60px 40px;*/
+}
+.slider-arrow{
+  height: 100%;
+  cursor: pointer;
+}
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper{
+  box-sizing: border-box; /*box-sizing позволяет выбрать алгоритм вычисления ширины и высоты элемента*/
+  height: 50px;
+  background color: #f2f2f2; 
+  border-bottom: 6px solid #ffffff;
+  font-family: 'Lato', bold ;
+}
+.title{
+  color: #666d89;
+  font-weight: 800; /*жирность шрифта*/
+  font-size: 24px; /*размер шрифта*/
+  margin-top: 68px; /*отступ сверху до текста лого*/
+  margin-left: 4%;  /*отступ слева*/
+  margin-bottom: 33px; /*отступ вниз*/
+}
+.paragraph{
+  color: #666d89;
+  font-weight: 300; /*жирность шрифта*/
+  font-size: 14px; /*размер шрифта*/
+  margin-left: 4%;  /*отступ слева*/
+  margin-bottom: 50px; /*отступ вниз*/
+}
+.services_cards{
+  text-align: justify;/*Растягивание текста по ширине.*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  font-family: 'Lato', bold ;
+  margin-left: 4%;
+}
+.services_card h4{
+  font-family: 'Lato', bold ;
+  margin-left: 120px;
+  color: #666d89;
+  padding: 20px;
+}
+.services_card p{
+  margin-bottom: 0 120px 0 0;
+  font-size: 10px;
+  color: #979db4;
+}
+
+@media screen and (max-width: 1020px){
+    nav{
+    margin-left: 30%;
+  }
+}
