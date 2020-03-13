@@ -8,7 +8,7 @@ p{
 	margin: 0 0 10px;
 }
 h2{
-	margin: 0 auto;
+	margin: 0;
 }
 a{
   text-decoration: none;
@@ -58,21 +58,22 @@ nav{
   text-decoration: none;
   color: #f06c64;
 }
-main{
-  
-   /*рамка по низу*/
-  padding: 0;
-}
+
 .slider{
-  position: relative;
+ 
   height: 600px;
-  display: inline-flex; /*Преобразует элемент в блочный flex-контейнер*/
-  justify-content: space-between; /*flex-элементы равномерно распределяются по горизонтали. 1-й элемент прилегает своей левой границей к левой границе контейнера, а последний прилегает к правой границе.*/
-  align-items: center; /*flex-элементы располагаются по центру контейнера, имея одинаковые отступы сверху и снизу. */
+  
+  
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
   margin: 0 auto;
   padding: 50px 40px 60px 40px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*flex-элементы располагаются по центру контейнера, имея одинаковые отступы сверху и снизу. */
+  height: 100%;
 }
 .slider_arrow_left{
   cursor: pointer;
@@ -89,14 +90,16 @@ main{
 .phone{
   display: inline-flex;
   align-items: center;
-  
+ }
 
+.container-s1{
+  height: 495px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
 }
 .wrapper-s1{
   box-sizing: border-box; /*box-sizing позволяет выбрать алгоритм вычисления ширины и высоты элемента*/
-  height: 50px;
   background color: #f2f2f2; 
-  border-bottom: 6px solid #ffffff;
   font-family: 'Lato', bold ;
 }
 .title-s1{
@@ -384,7 +387,7 @@ form {
   margin-top: 20px;
 }
 
-.contact {
+.contact-location {
   position: relative;
 
   display: block;
@@ -392,25 +395,25 @@ form {
   margin-left: 24px;
 }
 
-.phone {
+.contact-phone {
   margin-top: -1px;
 }
 
-.location::before {
+.contact-location::before {
   content: url("assets/image/singolo3/icon-location.svg");
   position: absolute;
   bottom: -2px;
   left: -20px;
 }
 
-.phone::before {
+.contact-phone::before {
   content: url("assets/image/singolo3/icon-phone.svg");
   position: absolute;
   bottom: -2px;
   left: -23px;
 }
 
-.email::before {
+.contact-email::before {
   content: url("assets/image/singolo3/icon-email.svg");
   position: absolute;
   bottom: -2px;
